@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>오늘의 운세</title>
+    <title>오늘의 운세 - 행운당</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
 </head>
 <body>
     <nav class="top-nav">
         <div class="nav-container">
-            <span class="logo">🍀 오늘의 운세</span>
+            <div class="logo">행운당</div>
             <ul class="nav-links">
                 <li><a href="#" class="active">오늘의 운세</a></li>
                 <li><a href="#">학업운</a></li>
                 <li><a href="#">연애운</a></li>
+                <li><a href="#">우정운</a></li>
                 <li><a href="#">금전운</a></li>
-                <li><a href="#">건강운</a></li>
             </ul>
         </div>
     </nav>
@@ -25,8 +25,8 @@
         <section id="input-view" class="view-section active">
             <div class="hero-content">
                 <div class="text-area">
-                    <p class="greeting">좋은 하루의 시작, 작은 행운을 확인해 보세요</p>
-                    <h1>오늘의 운세 🍀</h1>
+                    <p class="greeting">좋은 하루의 시작, 작은 행운을 확인해 보세요 </p>
+                    <h1>오늘의 운세 </h1>
                     
                     <div class="input-card">
                         <label for="birthdate" class="input-label">생년월일 입력</label>
@@ -37,7 +37,7 @@
                     </div>
                 </div>
                 <div class="image-area">
-                    <img src="images/clover-3d.png" alt="행운의 네잎클로버" class="hero-img" onerror="this.src='https://via.placeholder.com/400x400/f9fbf9/93c572?text=3D+Clover+Image'">
+                    <img src="images/clover.png" alt="메인 네잎클로버" class="hero-img">
                 </div>
             </div>
         </section>
@@ -51,7 +51,7 @@
                 <p class="card-label">오늘의 한 줄 운세</p>
                 <div class="quote-box">
                     <span class="quote-mark left">“</span>
-                    <p id="fortune-sentence">작은 용기가 당신의 하루를 빛나게 할 거예요.</p>
+                    <p id="fortune-sentence">여기에 운세 문구가 출력됩니다.</p>
                     <span class="quote-mark right">”</span>
                 </div>
                 
@@ -60,23 +60,23 @@
                 <div class="lucky-items-row">
                     <div class="lucky-item">
                         <div class="icon-circle">📍</div>
-                        <div class="item-info">
-                            <span class="label">행운의 장소</span>
-                            <strong id="lucky-place">도서관</strong>
+                        <div class="item-text">
+                            <span class="item-label">행운의 장소</span>
+                            <strong id="lucky-place">-</strong>
                         </div>
                     </div>
                     <div class="lucky-item">
                         <div class="icon-circle">🍀</div>
-                        <div class="item-info">
-                            <span class="label">행운의 아이템</span>
-                            <strong id="lucky-item">초록색 필기구</strong>
+                        <div class="item-text">
+                            <span class="item-label">행운의 아이템</span>
+                            <strong id="lucky-item">-</strong>
                         </div>
                     </div>
                     <div class="lucky-item">
                         <div class="icon-circle">⭐</div>
-                        <div class="item-info">
-                            <span class="label">행운의 행동</span>
-                            <strong id="lucky-action">새로운 사람에게 인사하기</strong>
+                        <div class="item-text">
+                            <span class="item-label">행운의 행동</span>
+                            <strong id="lucky-action">-</strong>
                         </div>
                     </div>
                 </div>
