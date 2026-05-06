@@ -178,11 +178,12 @@ input[type="date"]:focus {
 .image-area {
     flex: 1;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end; /* center에서 flex-end로 변경하여 오른쪽 정렬 */
+    padding-right: 20px;       /* 오른쪽 끝에서 살짝 띄워주는 여백 */
 }
 
 .hero-img {
-    max-width: 100%;
+    max-width: 80%;
     height: auto;
     filter: drop-shadow(0 20px 30px rgba(113, 162, 75, 0.2));
 }
